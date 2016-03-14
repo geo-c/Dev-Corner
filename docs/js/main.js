@@ -12,7 +12,7 @@ $( document ).ready(function() {
     };
 
     function insertLogo(url) {
-        $('a[role="search"]').insertBefore(
+        $('div[role="search"]').insertBefore(
             '<img src="' + url + '" style="width:auto; height:30px; border-radius:0px;">Dev-Corner<br>' +   
         );
     };
