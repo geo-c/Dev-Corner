@@ -1,6 +1,4 @@
-## Storage
-
-### Package_create
+## Package_create
 ##### Parameters
 *	name (string) – the name of the new dataset, must be between 2 and 100 characters long and contain only lowercase alphanumeric characters, - and _, e.g. 'warandpeace'
 *	title (string) – the title of the dataset (optional, default: same as name)
@@ -57,7 +55,7 @@ ckanr_setup(url = "http://giv-oct.uni-muenster.de:5000", key = "5df62ec6-5fa7-4e
 (res <- package_create("newpackage", owner_org='tests'))
 ```
 
-### Datastore_create
+## Datastore_create
 ##### Parameters
 *	resource_id (string) – resource id that the data is going to be stored against.
 *	force (bool (optional, default: False)) – set to True to edit a read-only resource
@@ -143,7 +141,7 @@ newRecords = [
 ckan.action.datastore_create(resource=resource, fields=newfields, records=newRecords, primary_key='dataset_id')
 ```
 
-### Datastore_upsert
+## Datastore_upsert
 ##### Parameters
 *	resource_id (string) – resource id that the data is going to be stored under.
 *	force (bool (optional, default: False)) – set to True to edit a read-only resource
@@ -210,60 +208,7 @@ ckan.action.datastore_upsert(
             force=True)
 ```
 
-
-### Datastore_search
-##### Parameters
-*   resource_id (string) – id or alias of the resource to be searched against
-*	filters (dictionary) – matching conditions to select, e.g {“key1”: “a”, “key2”: “b”} (optional)
-*	q (string) – full text query (optional)
-*	plain (bool) – treat as plain text query (optional, default: true)
-*	language (string) – language of the full text query (optional, default: english)
-*	limit (int) – maximum number of rows to return (optional, default: 100)
-*	offset (int) – offset this number of rows (optional)
-*	fields (list or comma separated string) – fields to return (optional, default: all fields in original order)
-*	sort (string) – comma separated field names with ordering e.g.: “fieldname1, fieldname2 desc”
-
-
-
-##### Javascript
-```javascript
-<script>
-    var client = new CKAN.Client('http://giv-oct.uni-muenster.de:5000', '5df62ec6-5fa7-4e2f-838a-a7d30c6aca39');
-    var resourceId = '450f2c55-425f-4797-8d70-33b5729d1f1d';
-
-    var nfilters = {"region": 'KEN'};
-
-    var search = client.action('datastore_search', {
-                resource_id:  resourceId,
-                filters: nfilters
-            },
-            function(err) {
-                if (err) console.log(err);
-                console.log('All done');
-            })
-</script>
-```
-
-##### Python
-```python
-#!/usr/bin/env python2
-import ckanapi
-
-remote = 'http://giv-oct.uni-muenster.de:5000'
-apikey = '5df62ec6-5fa7-4e2f-838a-a7d30c6aca39'
-resource_id = 'c123ba85-41f9-4a04-80f5-a26368ba9204'
-
-ckan = ckanapi.RemoteCKAN(remote, apikey)
-
-filters = {"region": "KEN"} 
-
-data = ckan.action.datastore_search(resource_id=resource_id, filters=filters)
-for record in data['records']:
-    print 'region: {x}, value: {y}'.format(x=record['region'], y=record['value'])
-```
-
-
-### Datastore_delete
+## Datastore_delete
 ##### Parameters
 *   resource_id (string) – resource id that the data will be deleted from. (optional)
 *	force (bool (optional, default: False)) – set to True to edit a read-only resource
