@@ -30,7 +30,7 @@ pages:
     #- newPage: newSection/newPage.md
 # - newSinlePage: newSinlePage.md
 
-theme: readthedocs
+theme: bootstrap
 
 markdown_extensions:
     - toc:
