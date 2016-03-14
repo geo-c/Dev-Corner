@@ -12,13 +12,13 @@ $( document ).ready(function() {
     };
 
     function insertLogo(url) {
-        $( '.wy-side-nav-search' ).html(
-        	'<img src="' + url + '" style="width:auto; height:30px; border-radius:0px;">Dev-Corner' + 
+        $( 'div.wy-side-nav-search' ).html(
+        	'<img src="' + url + '" style="width:auto; height:30px; border-radius:0px;">Dev-Corner<br>' + 
         	'<div role="search">' + 
                 '<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">' +
                     '<input type="text" name="q" placeholder="Search docs">' +
                 '</form>' +
-            '</div>';
+            '</div>'
       	);
     };
 
