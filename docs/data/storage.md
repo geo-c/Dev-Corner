@@ -1,7 +1,5 @@
 ## Storage
 
-## Storage
-
 ### Package_create
 ##### Parameters
 *	name (string) – the name of the new dataset, must be between 2 and 100 characters long and contain only lowercase alphanumeric characters, - and _, e.g. 'warandpeace'
