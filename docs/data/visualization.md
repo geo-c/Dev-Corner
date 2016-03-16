@@ -2,7 +2,7 @@
 ##### Description
 This example creates a map viewer by pulling a dataset from the NYC’s Open Data Portal containing a list of NYC Health and Hospitals Corporation Facilities
 
-##### R
+##### Code
 ```r
 library("RSocrata") # reading and writing to and from Socrata
 
@@ -52,7 +52,7 @@ leaflet(data = df.hhc) %>%
 ##### Description
 This example creates a map viewer (clustering) by pulling a dataset from the NYC’s Open Data Portal containing a list of NYC Health and Hospitals Corporation Facilities.
 
-##### R
+##### Code
 ```r
 
 library("RSocrata") # reading and writing to and from Socrata
@@ -119,7 +119,7 @@ map
 ##### Description
 This example is pulling a dataset from the CivicData Open Data Portal containing 2014 Salt Lake City crime incidents.
 
-##### R
+##### Code
 ```r
 url <- "http://civicdataprod1.cloudapp.net/storage/f/2014-07-07T16%3A17%3A25.958Z/2014.csv"
 
