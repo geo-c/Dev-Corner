@@ -38,7 +38,6 @@ df.hhc$Lon <- sapply(location, function(x) extract_lon(x))
 
 # add the leaflet library to your script
 library(leaflet)
-library(sp)
 
 # Similar to addCircleMarkers(addTitle(leaflet()))
 leaflet(data = df.hhc) %>%
@@ -89,7 +88,6 @@ df.hhc$Lon <- sapply(location, function(x) extract_lon(x))
 
 # add the leaflet library to your script
 library(leaflet)
-library(sp)
 
 # Create a palette that maps factor levels to colors
 pal <- colorFactor(c("navy", "red", "orange", "purple"), domain = df.hhc$Facility.Type)
