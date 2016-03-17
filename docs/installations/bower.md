@@ -1,7 +1,5 @@
 ## What is Bower?
 
-[TOC]
-
 >A package manager for the web
 >(Source: [http://bower.io](http://bower.io), 2016-02-15)
 
