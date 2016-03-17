@@ -19,7 +19,7 @@ pages:
 - Data:
     - Collection: data/collection.md
     - Storage: data/storage.md
-    - Retrieval: data/retrieval.md
+    - Retrieval: data/retrieval/retrieval.md
     - Analysis: data/analysis.md
     - Visualization: data/visualization.md
 - About:
