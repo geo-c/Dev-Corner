@@ -19,7 +19,7 @@ pages:
 - Data:
     - Collection: data/collection.md
     - Storage: data/storage.md
-    #- Retrieval: data/retrieval/retrieval.md
+    - Retrieval: data/retrieval.md
     - Retrieval:
        - Datastore_search: data/retrieval/datastore-search.md
        - Retrieve a resource: data/retrieval/retrieve-specific-resource.md
