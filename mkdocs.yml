@@ -20,9 +20,9 @@ pages:
     - Collection: data/collection.md
     - Storage: data/storage.md
     - Retrieval:
-         - Datastore_search: data/retrieval/datastore-search.md
-		 - Retrieve a resource: data/retrieval/retrieve-specific-resource.md
-		 - Retrieve from ckan group: data/retrieval/retrieve-from-ckangroup.md	
+       - Datastore_search: data/retrieval/datastore-search.md
+       - Retrieve a resource: data/retrieval/retrieve-specific-resource.md
+       - Retrieve from ckan group: data/retrieval/retrieve-from-ckangroup.md	
     - Analysis: data/analysis.md
     - Visualization: data/visualization.md
 - About:
