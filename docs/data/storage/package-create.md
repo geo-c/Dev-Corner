@@ -1,6 +1,6 @@
 ## Package_create
 ##### Parameters
-*	`name` (string) – the name of the new dataset, must be between 2 and 100 characters long and contain only lowercase alphanumeric characters, - and _, e.g. `warandpeace`
+*	`name` (string) – the name of the new dataset, must be between 2 and 100 characters long and contain only lowercase alphanumeric characters, - and _, e.g.: `warandpeace`
 *	`title` (string) – the title of the dataset (optional, default: same as name)
 *	`author` (string) – the name of the dataset’s author (optional)
 *	`author_email` (string) – the email address of the dataset’s author (optional)
@@ -17,7 +17,10 @@
 *	`extras` (list of dataset extra dictionaries) – the dataset’s extras (optional), extras are arbitrary (key: value) metadata items that can be added to datasets, each extra dictionary should have keys 'key' (a string), 'value' (a string), and optionally 'deleted'
 *	`relationships_as_object` (list of relationship dictionaries) – see `package_relationship_create()` for the format of relationship dictionaries (optional)
 *	`relationships_as_subject` (list of relationship dictionaries) – see `package_relationship_create()` for the format of relationship dictionaries (optional)
-*	`groups` (list of dictionaries) – the groups to which the dataset belongs (optional), each group dictionary should have one or more of the following keys which identify an existing group: 'id' (the id of the group, string), 'name' (the name of the group, string), 'title' (the title of the group, string), to see which groups exist call group_list()
+*	`groups` (list of dictionaries) – the groups to which the dataset belongs (optional), each group dictionary should have one or more of the following keys which identify an existing group: 
+    *	'id' (the id of the group, string)
+    *	'name' (the name of the group, string)
+    *	'title' (the title of the group, string), to see which groups exist call `group_list()`
 *	`owner_org` (string) – the id of the dataset’s owning organization, see `organization_list()` or `organization_list_for_user()` for available values (optional)
 
 ##### Javascript
