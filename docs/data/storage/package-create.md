@@ -1,5 +1,7 @@
 ## Package_create
+
 ##### Parameters
+
 *	`name` (string) – the name of the new dataset, must be between 2 and 100 characters long and contain only lowercase alphanumeric characters, - and _, e.g.: `warandpeace`
 *	`title` (string) – the title of the dataset (optional, default: same as name)
 *	`author` (string) – the name of the dataset’s author (optional)
@@ -13,8 +15,10 @@
 *	`state `(string) – the current state of the dataset, e.g. `"active"` or `"deleted"`, only active datasets show up in search results and other lists of datasets, this parameter will be ignored if you are not authorized to change the state of the dataset (optional, default: `"active"`)
 *	`type` (string) – the type of the dataset (optional), IDatasetForm plugins associate themselves with different dataset types and provide custom dataset handling behaviour for these types
 *	`resources` (list of resource dictionaries) – the dataset’s resources, see `resource_create()` for the format of resource dictionaries (optional)
-*	`tags` (list of tag dictionaries) – the dataset’s tags, see `tag_create()` for the format of tag dictionaries (optional)
-*	`extras` (list of dataset extra dictionaries) – the dataset’s extras (optional), extras are arbitrary (key: value) metadata items that can be added to datasets, each extra dictionary should have keys 'key' (a string), 'value' (a string), and optionally 'deleted'
+*	`tags` (Array[Strings]) – list of tag dictionaries, see `tag_create()` for the format of tag dictionaries (optional)
+*	`extras` (Array[Objects]) – list of dataset extra dictionaries (optional), extras are arbitrary, metadata items that can be added to datasets, each extra dictionary should have keys:
+   *	`key` (string)
+   *	`value` (string) - e.g.: `deleted`
 *	`relationships_as_object` (list of relationship dictionaries) – see `package_relationship_create()` for the format of relationship dictionaries (optional)
 *	`relationships_as_subject` (list of relationship dictionaries) – see `package_relationship_create()` for the format of relationship dictionaries (optional)
 *	`groups` (list of dictionaries) – the groups to which the dataset belongs (optional), each group dictionary should have one or more of the following keys which identify an existing group: 
