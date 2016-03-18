@@ -18,12 +18,13 @@
 *	`relationships_as_object` (list of relationship dictionaries) – see `package_relationship_create()` for the format of relationship dictionaries (optional)
 *	`relationships_as_subject` (list of relationship dictionaries) – see `package_relationship_create()` for the format of relationship dictionaries (optional)
 *	`groups` (list of dictionaries) – the groups to which the dataset belongs (optional), each group dictionary should have one or more of the following keys which identify an existing group: 
-    *	'id' (the id of the group, string)
-    *	'name' (the name of the group, string)
-    *	'title' (the title of the group, string), to see which groups exist call `group_list()`
+    *	`id` (string) - the id of the group
+    *	`name` (string) - the name of the group
+    *	`title` (string) - the title of the group, to see which groups exist call `group_list()`
 *	`owner_org` (string) – the id of the dataset’s owning organization, see `organization_list()` or `organization_list_for_user()` for available values (optional)
 
 ##### Javascript
+
 ```javascript
 <script>
     var client = new CKAN.Client('http://giv-oct.uni-muenster.de:5000', '5df62ec6-5fa7-4e2f-838a-a7d30c6aca39');
@@ -39,6 +40,7 @@
 ```
 
 ##### Python
+
 ```python
 #!/usr/bin/env python2
 import ckanapi
@@ -50,7 +52,9 @@ ckan = ckanapi.RemoteCKAN(remote, apikey)
 
 package = ckan.action.package_create(name='packagetest', owner_org='tests')
 ```
+
 ##### R
+
 ```r
 library('ckanr')
 ckanr_setup(url = "http://giv-oct.uni-muenster.de:5000", key = "5df62ec6-5fa7-4e2f-838a-a7d30c6aca39")
