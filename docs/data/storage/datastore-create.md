@@ -1,11 +1,11 @@
 ## Datastore_create
 ##### Parameters
 *	`resource_id` (string) – resource id that the data is going to be stored against.
-*	`force` (bool (optional, default: False)) – set to True to edit a read-only resource
-*	`resource` (dictionary) – resource dictionary that is passed to resource_create(). Use instead of resource_id (optional)
+*	`force` (boolean (optional, default: `false`)) – set to `true` to edit a read-only resource
+*	`resource` (dictionary) – resource dictionary that is passed to `resource_create()`. Use instead of `resource_id` (optional)
 *	`aliases` (list or comma separated string) – names for read only aliases of the resource. (optional)
 *	`fields` (list of dictionaries) – fields/columns and their extra metadata. (optional)
-*	`records` (list of dictionaries) – the data, eg: [{“dob”: “2005”, “some_stuff”: [“a”, “b”]}] (optional)
+*	`records` (list of dictionaries) – the data, eg: `[{"dob": "2005", "some_stuff": ["a", "b"]}]` (optional)
 *	`primary_key` (list or comma separated string) – fields that represent a unique key (optional)
 *	`indexes` (list or comma separated string) – indexes on table (optional)
 
