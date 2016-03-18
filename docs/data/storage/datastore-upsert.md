@@ -1,14 +1,14 @@
 ## Datastore_upsert
 ##### Parameters
-*	resource_id (string) – resource id that the data is going to be stored under.
-*	force (bool (optional, default: False)) – set to True to edit a read-only resource
-*	records (list of dictionaries) – the data, eg: [{“dob”: “2005”, “some_stuff”: [“a”,”b”]}] (optional)
-*	method (string) – the method to use to put the data into the datastore. Possible options are: upsert, insert, update (optional, default: upsert)
+*	`resource_id` (string) – resource id that the data is going to be stored under.
+*	`force` (boolean (optional, default: `false`)) – set to `true` to edit a read-only resource
+*	`records` (list of dictionaries) – the data, eg: `[{"dob": "2005", "some_stuff": ["a","b"]}]` (optional)
+*	`method` (string) – the method to use to put the data into the datastore. Possible options are: `upsert`, `insert`, `update` (optional, default: `upsert`)
 
 ##### Methods
-*	upsert: Update if record with same key already exists, otherwise insert. Requires unique key.
-*	insert: Insert only. This method is faster that upsert, but will fail if any inserted record matches an existing one. Does not require a unique key.
-*	update: Update only. An exception will occur if the key that should be updated does not exist. Requires unique key.
+*	`upsert`: Update if record with same key already exists, otherwise insert. Requires unique key.
+*	`insert`: Insert only. This method is faster that upsert, but will fail if any inserted record matches an existing one. Does not require a unique key.
+*	`update`: Update only. An exception will occur if the key that should be updated does not exist. Requires unique key.
 
 
 ##### Javascript
