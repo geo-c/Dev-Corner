@@ -18,7 +18,7 @@ pages:
     - MkDocs: installations/mkdocs.md
 - Data:
     - Collection: data/collection.md
-    - Storage:        
+    - Storage: data/storage.md 
        - Datastore_create: data/storage/datastore-create.md  
        - Datastore_delete: data/storage/datastore-delete.md  
        - Datastore_upsert: data/storage/datastore-upsert.md  
