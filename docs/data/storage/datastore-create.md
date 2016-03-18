@@ -5,7 +5,7 @@
 *	`resource` (dictionary) – resource dictionary that is passed to `resource_create()`. Use instead of `resource_id` (optional)
 *	`aliases` (list or comma separated string) – names for read only aliases of the resource. (optional)
 *	`fields` (list of dictionaries) – fields/columns and their extra metadata. (optional)
-*	`records` (list of dictionaries) – the data, eg: `[{"dob": "2005", "some_stuff": ["a", "b"]}]` (optional)
+*	`records` (list of dictionaries) – the data, e.g.: `[{"dob": "2005", "some_stuff": ["a", "b"]}]` (optional)
 *	`primary_key` (list or comma separated string) – fields that represent a unique key (optional)
 *	`indexes` (list or comma separated string) – indexes on table (optional)
 
