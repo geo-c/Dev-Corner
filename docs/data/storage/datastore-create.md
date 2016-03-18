@@ -11,6 +11,7 @@
 
 
 ##### Javascript
+
 ```javascript
 <script>
     var client = new CKAN.Client('http://giv-oct.uni-muenster.de:5000', '5df62ec6-5fa7-4e2f-838a-a7d30c6aca39');
@@ -24,18 +25,20 @@
     ]
 
     var data = [
-        {'indicator_id': ''Population',
+        {
+            'indicator_id': 'Population',
             'dataset_id': 'acled',
             'region': 'ITA',
             'value': '5000000',
-            'period': '2016'}
+            'period': '2016'
+        }
     ];
 
     var resource = {
         "package_id": "packagetest",
         "format": "CSV",
         "name": "NameExample2"
-    }
+    };
 
     client.action('datastore_create', {
                 resource:  resource,
@@ -46,12 +49,13 @@
                 if (err) console.log(err);
                 console.log('All done');
             }
-    )
+    );
 
 </script>
 ```
 
 ##### Python
+
 ```python
 #!/usr/bin/env python2
 import ckanapi
