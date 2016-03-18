@@ -1,7 +1,7 @@
 ## Datastore_delete
 ##### Parameters
 *   `resource_id` (string) – resource id that the data will be deleted from. (optional)
-*	`force` (bool (optional, default: false)) – set to True to edit a read-only resource
+*	`force` (bool (optional, default: `false`)) – set to `true` to edit a read-only resource
 *	`filters` (dictionary) – filters to apply before deleting (eg `{"name": "fred"}`). If missing delete whole table and all dependent views. (optional)
 
 ##### Javascript
