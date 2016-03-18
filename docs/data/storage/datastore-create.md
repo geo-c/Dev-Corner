@@ -22,7 +22,7 @@
         {'id': 'region', 'type': 'text'},
         {'id': 'period', 'type': 'int'},
         {'id': 'value', 'type': 'float'}
-    ]
+    ];
 
     var data = [
         {
@@ -41,15 +41,13 @@
     };
 
     client.action('datastore_create', {
-                resource:  resource,
-                records: data,
-                primary_key: 'dataset_id'
-            },
-            function(err) {
-                if (err) console.log(err);
-                console.log('All done');
-            }
-    );
+        resource:  resource,
+        records: data,
+        primary_key: 'dataset_id'
+    }, function(err) {
+        if (err) console.log(err);
+        console.log('All done');
+    });
 
 </script>
 ```
@@ -78,11 +76,13 @@ newfields = [
 ]
 
 newRecords = [
-    {	'indicator_id': 'Population',
+    {	
+        'indicator_id': 'Population',
         'dataset_id': 'acled',
         'region': 'ITA',
         'value': '5000000',
-        'period': '2016'}
+        'period': '2016'
+    }
 ]
 
 ckan.action.datastore_create(resource=resource, fields=newfields, records=newRecords, primary_key='dataset_id')
