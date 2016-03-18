@@ -2,7 +2,7 @@
 ##### Parameters
 *	`resource_id` (string) – resource id that the data is going to be stored under.
 *	`force` (boolean (optional, default: `false`)) – set to `true` to edit a read-only resource
-*	`records` (list of dictionaries) – the data, eg: `[{"dob": "2005", "some_stuff": ["a","b"]}]` (optional)
+*	`records` (list of dictionaries) – the data, e.g.: `[{"dob": "2005", "some_stuff": ["a","b"]}]` (optional)
 *	`method` (string) – the method to use to put the data into the datastore. Possible options are: `"upsert"`, `"insert"`, `"update"` (optional, default: `"upsert"`)
 
 ##### Methods
