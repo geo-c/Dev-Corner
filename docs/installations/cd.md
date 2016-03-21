@@ -14,12 +14,12 @@ We use CD for building automatically our documentation on our Main-Server. The f
 
 **ATTENTION:** There is already **GEO-C-Version** of the original **node-cd**-repository, so you can skip the steps which are marked with an `[*]`!
   
-GEO-C-Version:
+**GEO-C-Version**:
 ```
 git clone https://github.com/geo-c/node-cd.git
 ```
 
-`[*]` Original version:
+`[*]` **Original version**:
 ```
 git clone https://github.com/A21z/node-cd.git
 ```
