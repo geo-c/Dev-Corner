@@ -60,10 +60,21 @@ action: {
 @reboot root node /home/webteam/node-cd/src/index.js
 ```
 
-* Finally restart the Main-Server, so that the Continuous Delivery System starts listening for Commits on GitHub.
+* Finally restart the Main-Server, so that the Continuous Delivery System starts listening for commits on GitHub.
 
 ```
 sudo shutdown -r 0
 ```
 
-Edited markdown-files of the Dev-Corner will be directly rendered and published on the Main-Server after they were committed to GitHub
+### Second Listener
+
+* If you want to checkout more than 1 repository, create in your new repository a new Webhook with a new portnumber, e.g. `http://giv-oct.uni-muenster.de:61441/github`
+* Clone the **node-cd**-repository again on the Main-Server
+* Follow the same steps like above, but before starting the server, change the portnumber in the `/home/webteam/node-cd_2/config.js`-file: 
+
+```javascript
+var Private = {
+  server: {port: '61441'},
+  ...
+}
+```
