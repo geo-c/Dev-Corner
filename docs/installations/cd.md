@@ -51,6 +51,7 @@ action: {
     contentful: './contentful.sh'
   }
 }
+```
 
 * Add a cron-job for automatic start, when the Main-Server reboots with the command `sudo nano /etc/crontab` and add the following lines:
 
@@ -60,6 +61,7 @@ action: {
 ```
 
 * Finally restart the Main-Server, so that the Continuous Delivery System starts listening for Commits on GitHub.
+
 ```
 sudo shutdown -r 0
 ```
