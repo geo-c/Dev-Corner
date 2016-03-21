@@ -16,6 +16,7 @@ pages:
     - Nodejs: installations/nodejs.md
     - Bower: installations/bower.md
     - MkDocs: installations/mkdocs.md
+    - Continuous Delivery: installations/cd.md
 - Data:
     - Collection: data/collection.md
     - Storage: data/storage.md
