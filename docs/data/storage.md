@@ -1,1 +1,1 @@
-Introduction text to be added
+In this section, different snippets are provided to create/store datasets or packages into CKAN. Four different operations are detailed, [Datastore_create](storage/datastore-create.md), Datastore_delete [Datastore_delete](storage/datastore-delete.md), Datastore_upsert [Datastore_upsert](storage/datastore-upsert.md) and [Package_create](storage/package-create.md).
